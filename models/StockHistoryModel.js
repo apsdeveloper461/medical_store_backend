@@ -5,7 +5,7 @@ const stockhistorySchema=new mongoose.Schema({
         Date.now },
          productId: { type: 
         mongoose.Schema.Types.ObjectId, ref: 
-        'aps_product' },
+        'aps_products' },
         sales:{
             type:Number,
             default:0
@@ -16,4 +16,4 @@ const stockhistorySchema=new mongoose.Schema({
          
 })
 exports.stockHistoryModel = 
-    mongoose.model('aps_stock_history',stockhistorySchema);
+    mongoose.model('aps_stock_histories',stockhistorySchema);

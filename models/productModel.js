@@ -23,4 +23,4 @@ const productSchema=new mongoose.Schema({
     timestamps:true
 })
 
-exports.productModel=new mongoose.model('aps_product',productSchema)
+exports.productModel=new mongoose.model('aps_products',productSchema)
